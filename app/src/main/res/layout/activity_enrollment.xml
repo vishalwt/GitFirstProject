@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp">
+
+
+            <RelativeLayout
+                android:id="@+id/top_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                >
+            <Button
+                android:id="@+id/btnOpenDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+
+
+                android:background="@drawable/round_button"
+                android:padding="7dp"
+                android:text="Open Device"
+                android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/gotologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:background="@drawable/round_button"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="Login"
+                    android:textColor="#fff"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/top_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="User Name"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="7dp" />
+
+
+                <EditText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="7dp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="7dp" />
+
+
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="7dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp">
+
+
+                    <Button
+                        android:id="@+id/capture_fingerprint_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/round_button"
+                        android:padding="7dp"
+                        android:text="Finger print"
+                        android:textColor="#fff" />
+
+                    <ImageView
+                        android:id="@+id/capture_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/round_corner" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/finger_print_registration"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/round_button"
+        android:text="Register with finger print"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>
